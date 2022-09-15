@@ -7,6 +7,7 @@ function GalleryItem(props) {
         'width': '25vw',
         'height': '20vh',
         'border': '1px solid black',
+        'position': 'relative',
         'margin': '2px'
     }
     
@@ -18,6 +19,7 @@ function GalleryItem(props) {
         'backgroundImage': `url(${props.item.artworkUrl100})`,
         'backgroundRepeat': 'no-repeat',
         'backgroundSize': 'cover',
+        'position': 'relative',
         'color': 'yellow'
     }
     
