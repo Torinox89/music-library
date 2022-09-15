@@ -3,6 +3,13 @@ import Gallery from './components/Gallery'
 import SearchBar from './components/SearchBar'
 import { DataContext } from './context/DataContext'
 import { SearchContext } from './context/SearchContext'
+  
+
+const styledText = {
+	fontSize: '20px',
+	textAlign: 'center',
+	color: 'blue'
+}
 
 function App(){
 	let [message, setMessage] = useState('Search for Music!')
@@ -34,9 +41,13 @@ function App(){
 				term: searchInput,
 				handleSearch: handleSearch
 			}}>
+				<div style={styledText}>
 				<SearchBar />
+				</div>
 			</SearchContext.Provider>
-			{message}
+			<div style={styledText}>
+			  {message}
+			</div>
 			<DataContext.Provider value={data}>
 				<Gallery />
 			</DataContext.Provider>
