@@ -7,20 +7,20 @@ function GalleryItem(props) {
         'width': '25vw',
         'height': '20vh',
         'border': '1px solid black',
-        'position': 'relative',
-        'margin': '2px'
+        'margin' : '2px',
+        'position': 'relative'
     }
     
     const detailStyle = {
         'width': '80vw',
         'height': '20vh',
         'border': '1px solid black',
-        'margin': '2px',
+        'margin' : '2px',
+        'position': 'relative',
         'backgroundImage': `url(${props.item.artworkUrl100})`,
         'backgroundRepeat': 'no-repeat',
         'backgroundSize': 'cover',
-        'position': 'relative',
-        'color': 'yellow'
+        'color': 'white'
     }
     
     const simpleView = () => {
