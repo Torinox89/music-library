@@ -3,6 +3,12 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
+const styledText = {
+	fontSize: '20px',
+	textAlign: 'center',
+	color: 'blue'
+}
+
 function ArtistView() {
     const { id } = useParams()
     const [ artistData, setArtistData ] = useState([])
@@ -14,7 +20,5 @@ function ArtistView() {
         </div>
     )
 }
-
-
 
 export default ArtistView
