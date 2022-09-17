@@ -1,4 +1,4 @@
-import spinner_image from '../spinner-image.gif'
+import spinner_image from '../spinner_image.gif'
 
 const Spinner = () => {
     return (
