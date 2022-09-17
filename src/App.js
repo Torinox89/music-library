@@ -43,7 +43,7 @@ function App() {
 
   
     return (
-        <div>
+        <div style={styledText}>
         {message}
             <Router>
                 <Routes>
