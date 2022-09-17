@@ -1,9 +1,9 @@
-import loading_spinner from '../spinner-image.gif'
+import spinner_image from '../spinner-image.gif'
 
 const Spinner = () => {
     return (
         <div>
-            <img src={loading_spinner} alt="loading..." />
+            <img src={spinner_image} alt="loading..." />
         </div>
     )
 }
