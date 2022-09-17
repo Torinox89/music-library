@@ -1,10 +1,11 @@
 const API_URL = `https://itunes.apple.com/search?term=`
 
-const fetchSearch = async (searchTerm) => {
-    const response = await fetch(API_URL + searchTerm)
-    const resData = await response.json()
-    return resData.results
+const fetchSearch = (searchTerm) => {
+    return fetch(`http://localhost:4000/main/${searchTerm}`)
+    .then(response => response.json())
+    .then(resData => resData.results)
 }
+
 
 const wrapPromise = async (promise) => {
     let status = 'pending'

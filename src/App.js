@@ -26,8 +26,8 @@ function App() {
   const renderGallery = () => {
     if(data){
       return (
-        <Suspense fallback={<Spinner />}>
-          <Gallery data={data} />
+        <Suspense fallback={<Spinner/>}>
+          <Gallery data={data}/>
         </Suspense>
       )
     }

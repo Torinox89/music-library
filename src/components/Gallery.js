@@ -1,17 +1,20 @@
 import GalleryItem from './GalleryItem'
 
-const renderGallery = () => {
-    if(data){
+
+const Gallery = (props) => {
+    const myData = props.data.result.read()
+
+    const display = myData.map((item, index) => {
         return (
-            <Suspense fallback={<h1>Loading...</h1>} />
-                <Gallery data={data} />
-            </Suspense>
+            <GalleryItem item={item} key={index} />
         )
-    }
+    })
+
+    return (
+        <div>
+            {display}
+        </div>
+    )
 }
-
-}
-
-
 
 export default Gallery
