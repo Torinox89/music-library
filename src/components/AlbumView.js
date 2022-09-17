@@ -14,12 +14,12 @@ function AlbumView() {
     const [ albumData, setAlbumData ] = useState([])
 
     return (
-        <div>
+        
+        <div style={styledText}>
             <h2>The id passed was: {id}</h2>
             <p>Album Data Goes Here!</p>
         </div>
     )
 }
-
 
 export default AlbumView
